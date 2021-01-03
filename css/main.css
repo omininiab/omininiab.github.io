@@ -1,0 +1,17 @@
+:root {
+    --bs-font-sans-serif: Poppins, sans-serif;
+    --dk-bgd-col: #212529;
+    --lt-bgd-col: whitesmoke;
+    font-family: var(--bs-font-sans-serif);
+}
+
+body {
+    background-color: var(--lt-bgd-col);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
