@@ -23,24 +23,41 @@
     font-size: large;
 }
 
-#main {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 100vh auto auto;
+#profile-link {
+    color: var(--dk-bgd-col);
+    padding: 10px;
+    text-decoration: none;
+    font-size: large;
 }
 
-.container {
+#profile-link:hover {
+    color: darkblue;
+    padding: 10px;
+    text-decoration: none;
+    font-size: large;
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 100vh auto 50vh;
+}
+
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5%;
+}
+
+#projects {
+    
+    background-color: var(--lt-bgd-col);
 }
 
 footer {
     color: white;
     background-color: var(--dk-bgd-col);
     text-align: center;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    bottom: 0;
+    padding: 1%;
 }
