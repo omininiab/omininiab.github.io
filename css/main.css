@@ -1,5 +1,6 @@
 :root {
     --bs-font-sans-serif: Poppins, sans-serif;
+    --bs-primary: #212529;
     --dk-bgd-col: #212529;
     --lt-bgd-col: whitesmoke;
     font-family: var(--bs-font-sans-serif);
@@ -23,23 +24,83 @@
     font-size: large;
 }
 
-#profile-link {
+#profile-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.profile-link {
     color: var(--dk-bgd-col);
     padding: 10px;
     text-decoration: none;
     font-size: large;
 }
 
-#profile-link:hover {
-    color: darkblue;
-    padding: 10px;
-    text-decoration: none;
-    font-size: large;
+.profile-link:hover {
+    color: var(--lt-bgd-col);
 }
 
 #main {
+    grid-template-rows: 100vh auto 70vh;
+    width: 100vw;
     display: grid;
-    grid-template-rows: 100vh auto 50vh;
+    justify-content: center;
+}
+
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+    width: 100vw;
+}
+
+.flex-item {
+    margin: 1%;
+    width: 100%;
+}
+#projects a {
+    text-decoration: none;
+}
+.project {
+    background-color: var(--dk-bgd-col);
+    text-align: center;
+    width: 25vw;
+    padding-bottom: 1%;
+}
+
+.project p {
+    color: var(--lt-bgd-col);
+    text-decoration: none;
+    height: 2rem;
+    margin: 2%;
+}
+
+.project img {
+    object-fit: contain;
+    width: 100%;
+    height: calc(100% - 2rem);
+}
+
+@media (max-width: 45em) {
+    .project {
+        width: 90vw;
+        padding-bottom: 5%;
+    }
+}
+
+.btn-primary {
+    color: var(--lt-bgd-col);
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    color: var(--bs-primary);
+    background-color: var(--lt-bgd-col);
+    border-color: var(--dk-bgd-col);
 }
 
 .section {
@@ -48,6 +109,7 @@
     justify-content: center;
     align-items: center;
     padding: 5%;
+    width: 100vw;
 }
 
 #projects {
@@ -59,5 +121,10 @@ footer {
     color: white;
     background-color: var(--dk-bgd-col);
     text-align: center;
-    padding: 1%;
+    padding: 2%;
+    border: darkcyan;
+    border-style: solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
 }
