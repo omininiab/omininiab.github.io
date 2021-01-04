@@ -5,13 +5,36 @@
     font-family: var(--bs-font-sans-serif);
 }
 
-body {
-    background-color: var(--lt-bgd-col);
+.nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--dk-bgd-col);
+    color: var(--lt-bgd-col);
+    top: 0;
+}
+
+#logo {
+    height: 35px;
+    width: 35px;
+    margin: 5px;
+}
+
+#main {
+    padding: 10%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 25% 50% 25%;
 }
 
 footer {
     color: white;
+    background-color: var(--dk-bgd-col);
     text-align: center;
     padding-bottom: 1%;
     padding-top: 1%;
+    bottom: 0;
 }
