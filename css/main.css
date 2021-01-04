@@ -71,6 +71,10 @@
     padding-bottom: 1%;
 }
 
+.project:hover {
+    font-size: larger;
+}
+
 .project p {
     color: var(--lt-bgd-col);
     text-decoration: none;
