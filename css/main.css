@@ -64,32 +64,32 @@
 #projects a {
     text-decoration: none;
 }
-.project {
+.project-tile {
     background-color: var(--dk-bgd-col);
     text-align: center;
     width: 25vw;
     padding-bottom: 1%;
 }
 
-.project:hover {
+.project-tile:hover {
     font-size: larger;
 }
 
-.project p {
+.project-tile p {
     color: var(--lt-bgd-col);
     text-decoration: none;
     height: 2rem;
     margin: 2%;
 }
 
-.project img {
+.project-tile img {
     object-fit: contain;
     width: 100%;
     height: calc(100% - 2rem);
 }
 
 @media (max-width: 45em) {
-    .project {
+    .project-tile {
         width: 90vw;
         padding-bottom: 5%;
     }
