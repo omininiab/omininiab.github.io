@@ -98,13 +98,13 @@
     }
 }
 
-.btn-primary {
+#button {
     color: var(--lt-bgd-col);
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
 }
 
-.btn-primary:hover {
+#button:hover {
     color: var(--bs-primary);
     background-color: var(--lt-bgd-col);
     border-color: var(--dk-bgd-col);
