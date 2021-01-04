@@ -93,6 +93,9 @@
         width: 90vw;
         padding-bottom: 5%;
     }
+    #profile-links {
+        flex-direction: column;
+    }
 }
 
 .btn-primary {
