@@ -1,0 +1,21 @@
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+}
+
+#main {
+    margin: auto;
+    width: 50%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    line-height: 2;
+    text-align: center;
+}
+
+#image {
+    display: block;
+}
+
+ul {
+    text-align: left;
+} 
