@@ -140,6 +140,16 @@ footer {
   border-right: 0;
 }
 
+#displayQuote {
+  margin: auto;
+  width: 50%;
+  min-width: 200px;
+}
+
+#quoteAuthor, #displayQuote p {
+  font-size: small;
+}
+
 @media (max-width: 45em) {
   .project-tile {
     width: 90vw;
@@ -152,6 +162,11 @@ footer {
   #main {
     grid-template-rows: 100vh auto auto;
   }
+
+  #displayQuote {
+    min-width: 95%;
+  }
+
 }
 
 @media (max-height: 800px) {
