@@ -24,23 +24,6 @@
   font-size: large;
 }
 
-#profile-links {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.profile-link {
-  color: var(--dk-bgd-col);
-  padding: 10px;
-  text-decoration: none;
-  font-size: large;
-}
-
-.profile-link:hover {
-  color: var(--lt-bgd-col);
-}
-
 #main {
   grid-template-rows: 100vh auto 70vh;
   width: 100vw;
@@ -61,6 +44,33 @@
   margin: 1%;
   width: 100%;
 }
+
+#button {
+  color: var(--lt-bgd-col);
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+#button:hover {
+  color: var(--bs-primary);
+  background-color: var(--lt-bgd-col);
+  border-color: var(--dk-bgd-col);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  margin: auto;
+  width: 100vw;
+}
+
+#projects {
+  background-color: var(--lt-bgd-col);
+}
+
 #projects a {
   text-decoration: none;
 }
@@ -87,60 +97,35 @@
   width: 100%;
   height: calc(100% - 2rem);
 }
-@media (max-width: 45em) {
-  .project-tile {
-    width: 90vw;
-    padding-bottom: 5%;
-  }
-  #profile-links {
-    flex-direction: column;
-  }
-  #githubCalendar {
-    max-height: 1px;
-    visibility: hidden;
-  }
-  #main {
-    grid-template-rows: 100vh auto auto;
-  }
-}
-@media (max-height: 800px) {
-  #githubCalendar {
-    max-height: 1px;
-    visibility: hidden;
-  }
-  #main {
-    grid-template-rows: 100vh auto auto;
-  }
+
+#profile-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#button {
+.profile-link {
+  color: var(--dk-bgd-col);
+  padding: 10px;
+  text-decoration: none;
+  font-size: large;
+}
+
+.profile-link:hover {
   color: var(--lt-bgd-col);
-  background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
 }
 
-#button:hover {
-  color: var(--bs-primary);
-  background-color: var(--lt-bgd-col);
-  border-color: var(--dk-bgd-col);
-}
-
-.section {
+.calendar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 5%;
-  width: 100vw;
-}
-
-#projects {
-  background-color: var(--lt-bgd-col);
+  gap: 15px;
 }
 
 #githubCalendar {
-  padding: 5px;
-  margin: 5px;
+  padding-top: 10%;
+  margin: auto;
+  width: 100%;
 }
 
 footer {
@@ -153,4 +138,24 @@ footer {
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
+}
+
+@media (max-width: 45em) {
+  .project-tile {
+    width: 90vw;
+    padding-bottom: 5%;
+  }
+  #profile-links {
+    flex-direction: column;
+  }
+
+  #main {
+    grid-template-rows: 100vh auto auto;
+  }
+}
+
+@media (max-height: 800px) {
+  #main {
+    grid-template-rows: 100vh auto auto;
+  }
 }
