@@ -142,8 +142,6 @@ footer {
 
 #displayQuote {
   margin: auto;
-  width: 50%;
-  min-width: 200px;
 }
 
 #quoteAuthor, #displayQuote p {
