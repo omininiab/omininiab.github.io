@@ -45,43 +45,7 @@
       <section class="section" id="projects">
         <h2>These are some of my projects</h2>
         <br />
-        <div class="flex-row-container">
-          <a
-            class="project-tile flex-item"
-            target="_blank"
-            href="https://www.ominini.com/rock-paper-scissors"
-          >
-            <img class="project-image" src="/img/rock-paper-scissors.png" />
-            <p class="project-title">Rock Paper Scissors</p>
-          </a>
-          <a
-            class="project-tile flex-item"
-            target="_blank"
-            href="https://www.ominini.com/google-homepage"
-          >
-            <img class="project-image" src="/img/google-homepage.png" />
-            <p class="project-title">Google Homepage</p>
-          </a>
-          <a
-            class="project-tile flex-item"
-            target="_blank"
-            href="https://www.ominini.com/survey-form"
-          >
-            <img class="project-image" src="/img/survey-form.png" />
-            <p class="project-title">Survey Form</p>
-          </a>
-          <a
-            class="project-tile flex-item"
-            target="_blank"
-            href="https://www.ominini.com/ravi-tribute-page"
-          >
-            <img class="project-image" src="/img/ravi-tribute-page.png" />
-            <p class="project-title">Tribute Page</p>
-          </a>
-        </div>
-        <a href="https://www.freecodecamp.org/ominini" target="_blank"
-          ><button id="button" class="btn btn-primary">See more</button></a
-        >
+        <div id="projectList" class="flex-row-container"></div>
       </section>
 
       <section class="section" id="contact">
@@ -165,15 +129,16 @@
     </main>
 
     <footer id="footer">
-        <figure id="displayQuote" class="text-center">
-            <blockquote class="blockquote">
-              <p id="randomQuote"></p>
-            </blockquote>
-            <figcaption id="quoteAuthor" class="blockquote-footer"></figcaption>
-          </figure>
+      <figure id="displayQuote" class="text-center">
+        <blockquote class="blockquote">
+          <p id="randomQuote"></p>
+        </blockquote>
+        <figcaption id="quoteAuthor" class="blockquote-footer"></figcaption>
+      </figure>
       <p id="copyright"></p>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
     <script src="js/sunTzuQuotes.js"></script>
 
     <script
