@@ -1,5 +1,10 @@
 let projects = [
   {
+    title: "Calculator",
+    url: "https://www.ominini.com/calculator",
+    img: "/img/calculator.png",
+  },
+  {
     title: "Etch-a-Sketch",
     url: "https://www.ominini.com/etch-a-sketch",
     img: "/img/etch-a-sketch.png",
@@ -28,7 +33,7 @@ let projects = [
 
 const projectList = document.querySelector("#projectList");
 
-projects.forEach(function(project) {
+projects.forEach(function (project) {
   let aProject = document.createElement("a");
   aProject.classList.add("project-tile");
   aProject.classList.add("flex-item");
