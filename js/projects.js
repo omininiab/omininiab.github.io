@@ -1,5 +1,9 @@
 let projects = [
   {
+    title: "Youtube Page",
+    url: "https://www.ominini.com/youtube-page",
+    img: "/img/youtube-page.png",
+  },{
     title: "Calculator",
     url: "https://www.ominini.com/calculator",
     img: "/img/calculator.png",
