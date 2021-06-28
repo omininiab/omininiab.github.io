@@ -5,127 +5,14 @@
   --lt-bgd-col: whitesmoke;
   font-family: var(--bs-font-sans-serif);
 }
-
-.nav {
-  position: fixed;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: var(--dk-bgd-col);
-  top: 0;
-}
-
-.nav a {
-  color: var(--lt-bgd-col);
-  padding: 10px;
-  text-decoration: none;
-  font-size: large;
+#banner {
+  margin: auto;
+  max-width: 100vw;
 }
 
 #main {
-  grid-template-rows: 100vh auto 70vh;
-  width: 100vw;
-  display: grid;
-  justify-content: center;
-}
-
-.flex-row-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 5%;
-  width: 100vw;
-}
-
-.flex-item {
-  margin: 1%;
-  width: 100%;
-}
-
-#button {
-  color: var(--lt-bgd-col);
-  background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
-}
-
-#button:hover {
-  color: var(--bs-primary);
-  background-color: var(--lt-bgd-col);
-  border-color: var(--dk-bgd-col);
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
   margin: auto;
   width: 100vw;
-}
-
-#projects {
-  background-color: var(--lt-bgd-col);
-}
-
-#projects a {
-  text-decoration: none;
-}
-.project-tile {
-  background-color: var(--dk-bgd-col);
-  text-align: center;
-  width: 25vw;
-  padding-bottom: 1%;
-}
-
-.project-tile:hover {
-  font-size: larger;
-}
-
-.project-tile p {
-  color: var(--lt-bgd-col);
-  text-decoration: none;
-  height: 2rem;
-  margin: 2%;
-}
-
-.project-tile img {
-  object-fit: contain;
-  width: 100%;
-  height: calc(100% - 2rem);
-}
-
-#profile-links {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.profile-link {
-  color: var(--dk-bgd-col);
-  padding: 10px;
-  text-decoration: none;
-  font-size: large;
-}
-
-.profile-link:hover {
-  color: var(--lt-bgd-col);
-}
-
-.calendar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-#githubCalendar {
-  padding-top: 10%;
-  margin: auto;
-  width: 100%;
 }
 
 footer {
@@ -146,29 +33,4 @@ footer {
 
 #quoteAuthor, #displayQuote p {
   font-size: small;
-}
-
-@media (max-width: 45em) {
-  .project-tile {
-    width: 90vw;
-    padding-bottom: 5%;
-  }
-  #profile-links {
-    flex-direction: column;
-  }
-
-  #main {
-    grid-template-rows: 100vh auto auto;
-  }
-
-  #displayQuote {
-    min-width: 95%;
-  }
-
-}
-
-@media (max-height: 800px) {
-  #main {
-    grid-template-rows: 100vh auto auto;
-  }
 }
