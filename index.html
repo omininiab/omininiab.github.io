@@ -43,9 +43,10 @@
     script.onload = ShopifyBuyInit;
   }
   function ShopifyBuyInit() {
+    require('dotenv').config();
     var client = ShopifyBuy.buildClient({
       domain: 'ominini.myshopify.com',
-      storefrontAccessToken: '2792609daf9b1251ad64815bb7e58406',
+      storefrontAccessToken: ${{ secrets.SFAT}},
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('collection', {
