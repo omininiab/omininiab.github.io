@@ -55,11 +55,11 @@
                 },
               },
               title: {
-                "font-family": "Roboto, sans-serif",
+                "font-family": "Poppins, sans-serif",
               },
               button: {
-                "font-family": "Roboto, sans-serif",
-                "font-weight": "bold",
+                "font-family": "Poppins, sans-serif",
+                "font-weight": "normal",
                 ":hover": {
                   "background-color": "#000000",
                 },
@@ -69,13 +69,13 @@
                 },
               },
               price: {
-                "font-family": "Roboto, sans-serif",
+                "font-family": "Poppins, sans-serif",
               },
               compareAt: {
-                "font-family": "Roboto, sans-serif",
+                "font-family": "Poppins, sans-serif",
               },
               unitPrice: {
-                "font-family": "Roboto, sans-serif",
+                "font-family": "Poppins, sans-serif",
               },
             },
             contents: {
@@ -85,7 +85,7 @@
             text: {
               button: "Add to Cart",
             },
-            googleFonts: ["Roboto"],
+            googleFonts: ["Poppins"],
           },
           productSet: {
             styles: {
@@ -112,8 +112,8 @@
                 },
               },
               button: {
-                "font-family": "Roboto, sans-serif",
-                "font-weight": "bold",
+                "font-family": "Poppins, sans-serif",
+                "font-weight": "normal",
                 ":hover": {
                   "background-color": "#000000",
                 },
@@ -123,31 +123,31 @@
                 },
               },
               title: {
-                "font-family": "Helvetica Neue, sans-serif",
-                "font-weight": "bold",
+                "font-family": "Poppins, sans-serif",
+                "font-weight": "normal",
                 "font-size": "26px",
                 color: "#4c4c4c",
               },
               price: {
-                "font-family": "Helvetica Neue, sans-serif",
+                "font-family": "Poppins, sans-serif",
                 "font-weight": "normal",
                 "font-size": "18px",
                 color: "#4c4c4c",
               },
               compareAt: {
-                "font-family": "Helvetica Neue, sans-serif",
+                "font-family": "Poppins, sans-serif",
                 "font-weight": "normal",
                 "font-size": "15.299999999999999px",
                 color: "#4c4c4c",
               },
               unitPrice: {
-                "font-family": "Helvetica Neue, sans-serif",
+                "font-family": "Poppins, sans-serif",
                 "font-weight": "normal",
                 "font-size": "15.299999999999999px",
                 color: "#4c4c4c",
               },
             },
-            googleFonts: ["Roboto"],
+            googleFonts: ["Poppins"],
             text: {
               button: "Add to cart",
             },
@@ -155,10 +155,10 @@
           option: {
             styles: {
               label: {
-                "font-family": "Roboto, sans-serif",
+                "font-family": "Poppins, sans-serif",
               },
               select: {
-                "font-family": "Roboto, sans-serif",
+                "font-family": "Poppins, sans-serif",
               },
             },
             googleFonts: ["Roboto"],
@@ -166,8 +166,7 @@
           cart: {
             styles: {
               button: {
-                "font-family": "Roboto, sans-serif",
-                "font-weight": "bold",
+                "font-family": "Poppins, sans-serif",
                 ":hover": {
                   "background-color": "#000000",
                 },
@@ -182,13 +181,12 @@
               button: "Checkout",
             },
             popup: false,
-            googleFonts: ["Roboto"],
+            googleFonts: ["Poppins"],
           },
           toggle: {
             styles: {
               toggle: {
-                "font-family": "Roboto, sans-serif",
-                "font-weight": "bold",
+                "font-family": "Poppins, sans-serif",
                 "background-color": "#000000",
                 ":hover": {
                   "background-color": "#000000",
@@ -198,7 +196,7 @@
                 },
               },
             },
-            googleFonts: ["Roboto"],
+            googleFonts: ["Poppins"],
           },
         },
       });

@@ -1,2 +1,2 @@
 # omininiab.github.io
-Buy something
+Buy something while you're here.
