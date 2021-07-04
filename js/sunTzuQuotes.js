@@ -53,5 +53,5 @@ const quoteAuthor = document.querySelector("#quoteAuthor")
 quoteAuthor.innerHTML = "Sun Tzu in <cite id=\"sourceTitle\" title=\"Source Title\">The Art of War</cite>"
 
 const displayQuote = document.getElementById("displayQuote")
-displayQuote.style.width = "50%";
+displayQuote.style.width = "75%";
 displayQuote.style.minWidth = "200px"; 
