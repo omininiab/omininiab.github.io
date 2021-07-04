@@ -5,26 +5,21 @@
   --lt-bgd-col: whitesmoke;
   font-family: var(--bs-font-sans-serif);
 }
-#banner {
-  margin: auto;
-  max-width: 100vw;
-}
 
 #main {
   margin: auto;
-  width: 100vw;
+  width: 100%;
 }
 
-#subscribe {
-  padding-top: 50px;
-  padding-bottom: 50px;
+#header {
+  color: white;
+  background-color: var(--dk-bgd-col);
 }
 
 footer {
   color: white;
   background-color: var(--dk-bgd-col);
   text-align: center;
-  padding: 2%;
   border: darkcyan;
   border-style: solid;
   border-bottom: 0;
