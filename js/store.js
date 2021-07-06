@@ -161,7 +161,7 @@
                 "font-family": "Poppins, sans-serif",
               },
             },
-            googleFonts: ["Roboto"],
+            googleFonts: ["Poppins"],
           },
           cart: {
             styles: {

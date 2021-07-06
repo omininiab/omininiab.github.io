@@ -12,8 +12,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 #main {
   margin: auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
 }
 
 #header {
