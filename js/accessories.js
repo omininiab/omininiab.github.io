@@ -25,7 +25,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('collection', {
         id: '274746835138',
-        node: document.getElementById('collection-component-1628046364536'),
+        node: document.getElementById('collection-component-1628046784243'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
           "product": {
@@ -61,13 +61,13 @@
                 "font-family": "Roboto, sans-serif"
               }
             },
+            "buttonDestination": "modal",
             "contents": {
-              "button": false,
-              "buttonWithQuantity": true
+              "options": false
             },
             "width": "580px",
             "text": {
-              "button": "Add to cart"
+              "button": "View product"
             },
             "googleFonts": [
               "Roboto",
@@ -141,14 +141,6 @@
             }
           },
           "option": {
-            "styles": {
-              "label": {
-                "font-family": "Roboto, sans-serif"
-              },
-              "select": {
-                "font-family": "Roboto, sans-serif"
-              }
-            },
             "googleFonts": [
               "Roboto"
             ]
