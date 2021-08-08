@@ -39,10 +39,10 @@
                 }
               },
               "title": {
-                "font-family": "Roboto, sans-serif"
+                "font-family": "Poppins, sans-serif"
               },
               "button": {
-                "font-family": "Lato, sans-serif",
+                "font-family": "Poppins, sans-serif",
                 ":hover": {
                   "background-color": "#000000"
                 },
@@ -52,13 +52,13 @@
                 }
               },
               "price": {
-                "font-family": "Roboto, sans-serif"
+                "font-family": "Poppins, sans-serif"
               },
               "compareAt": {
-                "font-family": "Roboto, sans-serif"
+                "font-family": "Poppins, sans-serif"
               },
               "unitPrice": {
-                "font-family": "Roboto, sans-serif"
+                "font-family": "Poppins, sans-serif"
               }
             },
             "buttonDestination": "modal",
@@ -70,8 +70,8 @@
               "button": "View product"
             },
             "googleFonts": [
-              "Roboto",
-              "Lato"
+              "Poppins",
+              "Poppins"
             ]
           },
           "productSet": {
@@ -99,7 +99,7 @@
                 }
               },
               "button": {
-                "font-family": "Lato, sans-serif",
+                "font-family": "Poppins, sans-serif",
                 ":hover": {
                   "background-color": "#000000"
                 },
@@ -134,7 +134,7 @@
               }
             },
             "googleFonts": [
-              "Lato"
+              "Poppins"
             ],
             "text": {
               "button": "Add to cart"
@@ -142,13 +142,13 @@
           },
           "option": {
             "googleFonts": [
-              "Roboto"
+              "Poppins"
             ]
           },
           "cart": {
             "styles": {
               "button": {
-                "font-family": "Lato, sans-serif",
+                "font-family": "Poppins, sans-serif",
                 ":hover": {
                   "background-color": "#000000"
                 },
@@ -164,13 +164,13 @@
             },
             "popup": false,
             "googleFonts": [
-              "Lato"
+              "Poppins"
             ]
           },
           "toggle": {
             "styles": {
               "toggle": {
-                "font-family": "Lato, sans-serif",
+                "font-family": "Poppins, sans-serif",
                 "background-color": "#000000",
                 ":hover": {
                   "background-color": "#000000"
@@ -181,7 +181,7 @@
               }
             },
             "googleFonts": [
-              "Lato"
+              "Poppins"
             ]
           }
         },
