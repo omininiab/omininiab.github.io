@@ -10,6 +10,7 @@
   } else {
     loadScript();
   }
+
   function loadScript() {
     var script = document.createElement('script');
     script.async = true;
@@ -17,6 +18,7 @@
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
     script.onload = ShopifyBuyInit;
   }
+  
   function ShopifyBuyInit() {
     var client = ShopifyBuy.buildClient({
       domain: 'ominini.myshopify.com',

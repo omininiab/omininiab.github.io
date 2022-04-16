@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <head>
 <title>Ominini: Merch Store</title>
 <meta name="description"
   content="Ominini - Let's skip the pleasantries / Official online storefront offering limited-edition branded clothing apparel and products. Powered by Shopify, Printful, and GitHub.">
@@ -10,63 +11,38 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 <link rel="stylesheet" href="/css/main.css" type="text/css" />
-<link rel="icon" href="img/favicon.jpg" sizes="16x16 32x32" type="image/jpg" />
+<link rel="icon" href="img/logo-w.svg" sizes="16x16 32x32" type="image/svg" />
+</head>
 
+<body translate="no" class="w3-content" onload="myFunction()">
+  <br>
+  <img src="img/logo-b.png" alt="Ominini logo">
+  <div class="w3-padding-64 w3-large w3-text-grey">
+    <a href="tees.html" class="w3-bar-item w3-button">Tees</a>
+    <a href="sweats.html" class="w3-bar-item w3-button">Sweats</a>
+    <a href="jackets.html" class="w3-bar-item w3-button">Jackets</a>
+    <a href="gift.html" class="w3-bar-item w3-button">Gift Cards</a>
+    <a href="accessories.html" class="w3-bar-item w3-button">Accessories</a>
+    <p class="w3-right">
+      <a href="https://aemail.com/Wn7E" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-envelope w3-margin-right"></i>
+      </a>
+    </p>
+  </div>
 
-<body translate="no" class="w3-content" style="max-width: 1200px">
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index: 3; width: 250px" id="mySidebar">
-    <div class="w3-container w3-display-container w3-padding-16">
-      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <h1><strong><a href="index.html">OMININI</a></strong></h1>
-    </div>
-    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight: bold">
-      <a href="tees.html" class="w3-bar-item w3-button">T-shirts</a>
-      <a href="sweats.html" class="w3-bar-item w3-button">Sweatshirts & Hoodies</a>
-      <a href="jackets.html" class="w3-bar-item w3-button">Jackets</a>
-      <a href="gift.html" class="w3-bar-item w3-button">Gift Cards</a>
-      <a href="accessories.html" class="w3-bar-item w3-button">Accessories</a>
-    </div>
-    <a href="mailto:info@ominini.com" class="w3-bar-item w3-button w3-padding">Contact</a>
-    <a href="#subscribe" class="w3-bar-item w3-button w3-padding">Subscribe</a>
-  </nav>
-
-  <!-- Top menu on small screens -->
-  <header id="header" class="w3-bar w3-top w3-hide-large w3-xlarge">
-    <div class="w3-bar-item w3-padding-24 w3-wide"><strong><a href="index.html">OMININI</a></strong></div>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
-        class="fa fa-bars"></i></a>
-  </header>
-
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
-    id="myOverlay"></div>
-
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left: 250px">
-    <!-- Push down content on small screens -->
-    <div class="w3-hide-large" style="margin-top: 83px"></div>
-
-    <!-- Top header -->
-    <header class="w3-container w3-xlarge">
-      <p class="w3-right">
-        <a href="mailto:info@ominini.com" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-envelope w3-margin-right"></i>
-        </a>
-      </p>
-    </header>
-
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Page header -->
-    <div class="w3-display-container w3-container w3-center">
-      <h2 class="w3-jumbo w3-hide-small"><b>NEW ARRIVALS</b></h2>
-      <h2 class="w3-hide-large w3-hide-medium"><b>NEW ARRIVALS</b></h2>
+    <div class="w3-display-container w3-container">
+      <h2 class="w3-jumbo">NEW ARRIVALS</h2>
     </div>
 
     <!-- Product grid -->
     <div id="main" class="w3-row w3-grayscale">
       <br>
       <script src="js/store.js"></script>
-      <div id='collection-component-1627796607952'></div>
+      <div id="loader"></div>
+      <div class="myDiv" id='collection-component-1627796607952'></div>
+      <script src="js/loader.js"></script>
     </div>
 
     <!-- Subscribe section -->
@@ -102,24 +78,12 @@
     </div>
 
     <div class="w3-padding-64 w3-light-grey w3-small w3-center">
-      <div class="w3-row-padding">
-        <div class="w3-col s4">
-          <h4>Contact</h4>
-          <p>Questions? Go ahead and email us at:</p>
-          <a href="mailto:info@ominini.com">info@ominini.com</a>
-          <p>We typically respond in less than 48 hours.</p>
-        </div>
-
-        <div class="w3-col s4"><h4></h4></div>
-
-        <div class="w3-col s4 w3-left-align">
-          <h4>We accept</h4>
-          <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
-          <p><i class="fa fa-fw fa-apple"></i> Apple Pay</p>
-          <p><i class="fa fa-fw fa-google-wallet"></i> Google Pay</p>
-          <p><i class="fa fa-fw fa-exchange"></i> Interac e-transfer</p>
-        </div>
-      </div>
+      <h4>Contact</h4>
+      <p>Questions? Go ahead and email us:</p>
+      <a href="https://aemail.com/Wn7E" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-envelope w3-margin-right"></i>
+      </a>
+      <p>We typically respond in less than 48 hours.</p>
     </div>
     <!-- Footer -->
     <footer id="footer" class="w3-center w3-padding-32">
