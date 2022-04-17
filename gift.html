@@ -1,76 +1,156 @@
 <!DOCTYPE html>
 <html>
-<title>Ominini: Merch Store</title>
-<meta name="description"
-    content="Ominini - Let's skip the pleasantries / Official online storefront offering limited-edition branded clothing apparel and products. Powered by Shopify, Printful, and GitHub.">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-<link rel="stylesheet" href="/css/main.css" type="text/css" />
-<link rel="icon" href="img/favicon.jpg" sizes="16x16 32x32" type="image/jpg" />
+  <head>
+    <title>Ominini: Merch Store</title>
+    <meta
+      name="description"
+      content="Ominini - Let's skip the pleasantries / Official online storefront offering limited-edition branded clothing apparel and products. Powered by Shopify, Printful, and GitHub."
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
+    <link
+      rel="icon"
+      href="img/logo-w.svg"
+      sizes="16x16 32x32"
+      type="image/svg"
+    />
+  </head>
 
+  <body translate="no" class="w3-content" onload="myFunction()">
+    <br />
+    <a href="index.html"><img src="img/logo-b.png" alt="Ominini logo" /></a>
+    <div class="w3-padding-64 w3-large w3-text-grey">
+      <a href="tees.html" class="w3-bar-item w3-button">Tees</a>
+      <a href="sweats.html" class="w3-bar-item w3-button">Sweats</a>
+      <a href="jackets.html" class="w3-bar-item w3-button">Jackets</a>
+      <a href="gift.html" class="w3-bar-item w3-button">Gift Cards</a>
+      <a href="accessories.html" class="w3-bar-item w3-button">Accessories</a>
+      <p class="w3-right">
+        <a
+          href="https://aemail.com/Wn7E"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-envelope w3-margin-right"></i>
+        </a>
+      </p>
+    </div>
 
-<body translate="no" class="w3-content" style="max-width: 1200px">
-    <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index: 3; width: 250px" id="mySidebar">
-        <div class="w3-container w3-display-container w3-padding-16">
-            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-            <h1><strong><a href="index.html">OMININI</a></strong></h1>
-        </div>
-        <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight: bold">
-            <a href="tees.html" class="w3-bar-item w3-button">T-shirts</a>
-            <a href="sweats.html" class="w3-bar-item w3-button">Sweatshirts & Hoodies</a>
-            <a href="jackets.html" class="w3-bar-item w3-button">Jackets</a>
-            <a href="gift.html" class="w3-bar-item w3-button">Gift Cards</a>
-            <a href="accessories.html" class="w3-bar-item w3-button">Accessories</a>
-        </div>
-    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <!-- Top menu on small screens -->
-    <header id="header" class="w3-bar w3-top w3-hide-large w3-xlarge">
-        <div class="w3-bar-item w3-padding-24 w3-wide"><strong><a href="index.html">OMININI</a></strong></div>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
-                class="fa fa-bars"></i></a>
-    </header>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
-        id="myOverlay"></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left: 250px">
-        <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top: 83px"></div>
-
-        <!-- Top header -->
-        <header class="w3-container w3-xlarge">
-            <p class="w3-right">
-                <a href="mailto:info@ominini.com" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-envelope w3-margin-right"></i>
-                </a>
-            </p>
-        </header>
-
-        <!-- Page header -->
-    <div class="w3-display-container w3-container w3-center">
-        <h2 class="w3-jumbo w3-hide-small"><b>Gift Cards</b></h2>
-        <h2 class="w3-hide-large w3-hide-medium"><b>Gift Cards</b></h2>
+    <!-- Product grid -->
+    <div id="main" class="w3-row w3-grayscale">
+      <script src="js/gift.js"></script>
+      <div id="loader"></div>
+      <div class="w3-display-container w3-container">
+        <h2 class="w3-jumbo">GIFT CARDS</h2>
       </div>
+      <div class="myDiv" id='collection-component-1627828713957'></div>
+      <script src="js/loader.js"></script>
+    </div>
 
-        <!-- Product grid -->
-        <div id="main" class="w3-row w3-grayscale">
-            <br>
-            <script src="js/gift.js"></script>
-            <div id='collection-component-1627828713957'></div>
-        </div>
+    <!-- Subscribe section -->
+    <div id="subscribe" class="w3-container w3-black w3-padding-64">
+      <h1>Subscribe</h1>
+      <!-- Begin Mailchimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form
+          action="https://ominini.us14.list-manage.com/subscribe/post?u=19131ba207553a340ec75a0e1&amp;id=ebfe9d8533"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL"
+              >To get special offers and VIP treatment: Be the first to learn
+              about new products</label
+            >
+            <br />
+            <br />
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="w3-input w3-border"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="example@email.com"
+              required
+            />
+            <br />
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px">
+              <input
+                type="email"
+                name="b_19131ba207553a340ec75a0e1_ebfe9d8533"
+                class="form-control"
+                id="exampleInputEmail1"
+                tabindex="-1"
+                value=""
+              />
+            </div>
 
-        <!-- End page content -->
+            <div class="clear">
+              <input
+                type="submit"
+                value="Subscribe"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="w3-button w3-cyan w3-margin-bottom"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--End mc_embed_signup-->
+    </div>
 
-        <!-- Accordion -->
-        <script src="/js/accordion.js"></script>
-</body>
+    <div class="w3-padding-64 w3-light-grey w3-small w3-center">
+      <h4>Contact</h4>
+      <p>Questions? Go ahead and email us:</p>
+      <a
+        href="https://aemail.com/Wn7E"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-envelope w3-margin-right"></i>
+      </a>
+      <p>We typically respond in less than 48 hours.</p>
+    </div>
+    <!-- Footer -->
+    <footer id="footer" class="w3-center w3-padding-32">
+      <figure id="displayQuote" class="text-center">
+        <blockquote class="blockquote">
+          <p id="randomQuote"></p>
+        </blockquote>
+        <figcaption id="quoteAuthor" class="blockquote-footer"></figcaption>
+      </figure>
+      <p id="copyright"></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/sunTzuQuotes.js"></script>
 
+    <!-- End page content -->
+
+    <!-- Accordion -->
+    <script src="/js/accordion.js"></script>
+  </body>
 </html>
