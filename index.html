@@ -31,31 +31,30 @@
     />
   </head>
 
-  <body translate="no" class="w3-content" onload="myFunction()">
+  <body translate="no" class="w3-content">
     <br />
-    <a href="index.html"><img src="img/logo-b.png" alt="Ominini logo" /></a>
-    <div class="w3-padding-64 w3-large w3-text-grey">
-      <p class="w3-right">
-        <a
-          href="https://aemail.com/Wn7E"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa fa-envelope w3-margin-right"></i>
-        </a>
-      </p>
+    <!-- Navbar -->
+    <div class="w3-bar w3-padding-64">
+      <div class="w3-bar-item">
+        <a href="index.html"><img src="img/logo-b.png" alt="Ominini logo" /></a>
+      </div>
+
+      <div class="w3-right w3-padding-32 w3-bar-item">
+        <div class="w3-hide-small">
+          <a class="w3-button" href="#blog">BLOG</a>
+          <a class="w3-button" href="#credentials">CREDENTIALS</a>
+          <a class="w3-button" href="#contact" class="w3-button"
+            >STAY IN TOUCH</a
+          >
+        </div>
+      </div>
     </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Header -->
-    <header class="w3-container w3-red w3-center" style="padding: 128px 16px">
-      <h1 class="w3-margin w3-jumbo">START PAGE</h1>
-      <p class="w3-xlarge">Template by w3.css</p>
-      <button
-        class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
-      >
-        Get Started
-      </button>
+    <header class="w3-container w3-black w3-center" style="padding: 128px 16px">
+      <h1 class="w3-margin w3-jumbo">Hello World!</h1>
+      <p class="w3-xlarge">Thanks for stopping by.</p>
     </header>
     <!-- Portfolio -->
     <div id="main" class="w3-row w3-grayscale">
@@ -65,9 +64,14 @@
           <hr />
           <br />
         </div>
-        <h2 class="w3-jumbo">Publications</h2>
+        <h2 class="w3-jumbo" id="blog">Publications</h2>
+        <p>
+          Whether you are a business owner, a working professional, or just
+          someone looking to live a more balanced life, I hope you will find
+          this blog helpful and inspiring.”
+        </p>
         <!-- Blog Category Grid-->
-        <div class="w3-row-padding w3-padding-16 w3-center" id="blog">
+        <div class="w3-row-padding w3-padding-16 w3-center">
           <div class="w3-third">
             <a href="/blog/business/index.html"
               ><img
@@ -79,7 +83,9 @@
             <p>My thoughts on a variety of business and political themes.</p>
           </div>
           <div class="w3-third">
-            <img src="/img/life.jpg" alt="life" style="width: 100%" />
+            <a href="/blog/life/index.html"
+              ><img src="/img/life.jpg" alt="life" style="width: 100%"
+            /></a>
             <h3>Life</h3>
             <p>
               I'd hardly refer to myself as a life coach, but I often have
@@ -88,11 +94,12 @@
             </p>
           </div>
           <div class="w3-third">
-            <img
-              src="/img/religion.jpg"
-              alt="religion and spirituality"
-              style="width: 100%"
-            />
+            <a href="/blog/religion/index.html"
+              ><img
+                src="/img/religion.jpg"
+                alt="religion and spirituality"
+                style="width: 100%"
+            /></a>
             <h3>Religion and Spirituality</h3>
             <p>
               Is there more to life than the pursuit of wealth and happiness?
@@ -107,7 +114,7 @@
           <hr />
           <br />
         </div>
-        <h2 class="w3-jumbo">Education</h2>
+        <h2 class="w3-jumbo" id="credentials">Education</h2>
         <h3>Master of Business Administration (MBA)</h3>
         <p>Trinity Western University (2018)</p>
         <div>
@@ -133,6 +140,7 @@
       <hr />
       <br />
     </div>
+    <h2 class="w3-jumbo" id="contact">Stay in Touch</h2>
     <!-- Subscribe section -->
     <div id="subscribe" class="w3-container w3-black w3-padding-64">
       <h1>Subscribe</h1>
@@ -191,7 +199,7 @@
 
     <div class="w3-padding-64 w3-light-grey w3-small w3-center">
       <h4>Contact</h4>
-      <p>Questions? Go ahead and email us:</p>
+      <p>Questions? Go ahead and send an email:</p>
       <a
         href="https://aemail.com/Wn7E"
         target="_blank"
