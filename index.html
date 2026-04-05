@@ -1,162 +1,117 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Ominini</title>
-    <meta
-      name="description"
-      content="Official Portfolio of Ominini, a curation of his work and publications. Thanks for stopping by."
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="/css/main.css" type="text/css" />
-    <link
-      rel="icon"
-      href="img/logo-w.svg"
-      sizes="16x16 32x32"
-      type="image/svg"
-    />
-  </head>
+<html lang="en">
 
-  <body translate="no" class="w3-content">
-    <br />
-    <!-- Navbar -->
-    <div class="w3-bar w3-padding-64">
-      <div class="w3-bar-item">
-        <a href="index.html"><img src="img/logo-b.png" alt="Ominini logo" /></a>
+<head>
+  <title>Ominini | Canadian Political Commentator & Think Tank</title>
+  <meta name="description"
+    content="Advancing Small Government & Individual Liberty in Canada. The official portal of Ominini, offering commentary, policy analysis, and conservative thought." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/css/main.css" type="text/css" />
+  <!-- Try to keep icon but use standard fallback -->
+  <link rel="icon" href="/img/logo-w.svg" sizes="16x16 32x32" type="image/svg" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="/index.html" class="logo-container">
+      <!-- Kept the original logo-b.png for now but wrapped in text for brand -->
+      <span class="logo-text">OMININI</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#principles">Core Principles</a>
+      <a href="/#subscribe" class="btn">Join the Movement</a>
+    </div>
+  </nav>
+
+  <!-- Go to Top Button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Advancing Small Government & Individual Liberty</h1>
+    <p>A Canadian perspective on preserving constitutional freedoms, limiting state overreach, and fostering sensible,
+      localized policy.</p>
+    <a href="/#principles" class="btn btn-primary">Discover Our Principles</a>
+  </header>
+
+  <!-- Core Principles Section -->
+  <section id="principles" class="principles">
+    <h2 class="section-title">Core Principles</h2>
+    <div class="principles-grid">
+      <!-- Fiscal Responsibility -->
+      <div class="principle-card">
+        <i class="fa-solid fa-scale-balanced principle-icon"></i>
+        <h3>Fiscal Responsibility</h3>
+        <p>Advocating for lower taxes, balanced budgets, and eliminating wasteful government spending to ensure economic
+          stability for future generations.</p>
       </div>
-
-      <div class="w3-right w3-padding-32 w3-bar-item">
-        <div class="w3-hide-small">
-          <a class="w3-button" href="#contact" class="w3-button"
-            >STAY IN TOUCH</a
-          >
-        </div>
+      <!-- Free Markets -->
+      <div class="principle-card">
+        <i class="fa-solid fa-chart-line principle-icon"></i>
+        <h3>Free Markets</h3>
+        <p>Defending economic liberty, deregulation, and the power of competition to drive innovation and prosperity
+          across Canadian provinces.</p>
+      </div>
+      <!-- Decentralized Power -->
+      <div class="principle-card">
+        <i class="fa-solid fa-building-columns principle-icon"></i>
+        <h3>Decentralized Power</h3>
+        <p>Supporting strong provincial sovereignty and local governance, ensuring decisions are made closest to the
+          people they affect.</p>
+      </div>
+      <!-- Individual Rights -->
+      <div class="principle-card">
+        <i class="fa-solid fa-shield-halved principle-icon"></i>
+        <h3>Individual Rights</h3>
+        <p>Protecting freedom of speech, property rights, and the fundamental liberties enshrined in the Canadian
+          Charter.</p>
       </div>
     </div>
+  </section>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <!-- Header -->
-    <header class="w3-container w3-black w3-center" style="padding: 128px 16px">
-      <h1 class="w3-margin w3-jumbo">Hello World!</h1>
-      <p class="w3-xlarge">Thanks for stopping by.</p>
-    </header>
-    <!-- Portfolio -->
-    <div id="main" class="w3-row w3-grayscale">
-      <div class="w3-display-container w3-container">
-        <div>
-          <br />
-          <hr />
-          <br />
-        </div>
-        <h2 class="w3-jumbo" id="projects">What I am working on</h2>
-        <p>I have a few projects in the works that I am excited to roll out soon.</p>
-        <ul>
-          <li>Podcast</li>
-          <li>Piano Course</li>
-          <li>Speaking Engagements</li>
-        </ul>
+  <!-- Subscribe section -->
+  <section id="subscribe" class="subscribe-section">
+    <h2 class="section-title">Stay Informed on Canadian Policy</h2>
+    <p style="margin-bottom: 30px; font-size: 1.1rem;">Join the movement. Sign up for our newsletter to receive the
+      latest commentary and policy analysis.</p>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <form action="https://ominini.us14.list-manage.com/subscribe/post?u=19131ba207553a340ec75a0e1&amp;id=ebfe9d8533"
+      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="subscribe-form"
+      target="_blank" novalidate>
+      <input type="email" value="" name="EMAIL" id="exampleInputEmail1" placeholder="Enter your email address"
+        required />
+      <!-- Anti-bot -->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="b_19131ba207553a340ec75a0e1_ebfe9d8533" tabindex="-1" value="" />
       </div>
-    </div>
-    <div>
-      <br />
-      <hr />
-      <br />
-    </div>
-    <h2 class="w3-jumbo" id="contact">Stay in Touch</h2>
-    <!-- Subscribe section -->
-    <div id="subscribe" class="w3-container w3-black w3-padding-64">
-      <h1>Subscribe</h1>
-      <!-- Begin Mailchimp Signup Form -->
-      <div id="mc_embed_signup">
-        <form
-          action="https://ominini.us14.list-manage.com/subscribe/post?u=19131ba207553a340ec75a0e1&amp;id=ebfe9d8533"
-          method="post"
-          id="mc-embedded-subscribe-form"
-          name="mc-embedded-subscribe-form"
-          class="validate"
-          target="_blank"
-          novalidate
-        >
-          <div id="mc_embed_signup_scroll">
-            <label for="mce-EMAIL">Stay up to date.</label>
-            <br />
-            <br />
-            <input
-              type="email"
-              value=""
-              name="EMAIL"
-              class="w3-input w3-border"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="example@email.com"
-              required
-            />
-            <br />
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px">
-              <input
-                type="email"
-                name="b_19131ba207553a340ec75a0e1_ebfe9d8533"
-                class="form-control"
-                id="exampleInputEmail1"
-                tabindex="-1"
-                value=""
-              />
-            </div>
+      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" />
+    </form>
+  </section>
 
-            <div class="clear">
-              <input
-                type="submit"
-                value="Subscribe"
-                name="subscribe"
-                id="mc-embedded-subscribe"
-                class="w3-button w3-cyan w3-margin-bottom"
-              />
-            </div>
-          </div>
-        </form>
+  <!-- Footer -->
+  <footer>
+    <div id="displayQuote">
+      <p id="randomQuote">"Loading quote..."</p>
+      <span id="quoteAuthor"></span>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="social-links">
+        <!-- Sample links, utilizing FontAwesome -->
+        <a href="https://aemail.com/Wn7E" target="_blank" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
       </div>
-      <!--End mc_embed_signup-->
-    </div>
-
-    <div class="w3-padding-64 w3-light-grey w3-small w3-center">
-      <h4>Contact</h4>
-      <p>Questions? Go ahead and send an email:</p>
-      <a
-        href="https://aemail.com/Wn7E"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-envelope w3-margin-right"></i>
-      </a>
-    </div>
-    <!-- Footer -->
-    <footer id="footer" class="w3-center w3-padding-32">
-      <figure id="displayQuote" class="text-center">
-        <blockquote class="blockquote">
-          <p id="randomQuote"></p>
-        </blockquote>
-        <figcaption id="quoteAuthor" class="blockquote-footer"></figcaption>
-      </figure>
       <p id="copyright"></p>
-    </footer>
-    <script src="js/main.js"></script>
-    <script src="js/sunTzuQuotes.js"></script>
+    </div>
+  </footer>
 
-    <!-- End page content -->
-  </body>
+  <script src="/js/main.js"></script>
+  <script src="/js/quotes.js"></script>
+</body>
+
 </html>
