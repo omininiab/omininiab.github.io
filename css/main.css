@@ -207,6 +207,36 @@ h6 {
   font-size: 0.95rem;
 }
 
+/* Podcast Section */
+.podcast-section {
+  padding: 80px 20px;
+  background-color: var(--col-white);
+  text-align: center;
+}
+
+.podcast-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* Newsletter/Subscribe Section */
 .subscribe-section {
   background-color: var(--dk-bgd-col);
