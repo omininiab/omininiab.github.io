@@ -1,3 +1,4 @@
+(() => {
 const footerCopyright = document.querySelector("#copyright");
 if (footerCopyright) {
   footerCopyright.textContent = `\u00a9 Ominini ${new Date().getFullYear()}`;
@@ -94,3 +95,4 @@ if (randomQuote && quoteAuthor) {
   randomQuote.textContent = quote.text;
   quoteAuthor.textContent = quote.author;
 }
+})();
