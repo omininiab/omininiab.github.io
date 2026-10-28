@@ -3,6 +3,60 @@ if (footerCopyright) {
   footerCopyright.textContent = `\u00a9 Ominini ${new Date().getFullYear()}`;
 }
 
+function getStoredTheme() {
+  try {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme === "light" || savedTheme === "dark" ? savedTheme : null;
+  } catch (error) {
+    console.warn("Unable to read the saved theme preference:", error);
+    return null;
+  }
+}
+
+const themePreference = window.matchMedia
+  ? window.matchMedia("(prefers-color-scheme: dark)")
+  : null;
+let storedTheme = getStoredTheme();
+let currentTheme =
+  storedTheme || (themePreference?.matches ? "dark" : "light");
+
+function applyTheme(theme, savePreference = true) {
+  currentTheme = theme;
+  document.documentElement.setAttribute("data-theme", theme);
+
+  document.querySelectorAll("#theme-toggle").forEach((toggleButton) => {
+    const isDark = theme === "dark";
+    toggleButton.setAttribute("aria-pressed", String(isDark));
+  });
+
+  if (savePreference) {
+    storedTheme = theme;
+    try {
+      localStorage.setItem("theme", theme);
+    } catch (error) {
+      console.warn("Unable to save the theme preference:", error);
+    }
+  }
+
+  document.dispatchEvent(
+    new CustomEvent("themechange", { detail: { theme } })
+  );
+}
+
+applyTheme(currentTheme, false);
+
+document.querySelectorAll("#theme-toggle").forEach((toggleButton) => {
+  toggleButton.addEventListener("click", () => {
+    applyTheme(currentTheme === "dark" ? "light" : "dark");
+  });
+});
+
+themePreference?.addEventListener("change", (event) => {
+  if (!storedTheme) {
+    applyTheme(event.matches ? "dark" : "light", false);
+  }
+});
+
 const myButton = document.getElementById("myBtn");
 if (myButton) {
   const updateScrollButton = () => {

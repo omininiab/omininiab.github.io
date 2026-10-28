@@ -25,6 +25,10 @@
       <a href="/#principles">Core Principles</a>
       <a href="/#podcast">Podcast</a>
       <a href="/#subscribe" class="btn">Join the Movement</a>
+      <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Dark mode" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">☽</span>
+        <span class="theme-text">Dark mode</span>
+      </button>
     </div>
   </nav>
 
@@ -102,10 +106,11 @@
     <form action="https://ominini.us14.list-manage.com/subscribe/post?u=19131ba207553a340ec75a0e1&amp;id=ebfe9d8533"
       method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="subscribe-form"
       target="_blank" novalidate>
+      <label class="visually-hidden" for="exampleInputEmail1">Email address</label>
       <input type="email" value="" name="EMAIL" id="exampleInputEmail1" placeholder="Enter your email address"
         required />
       <!-- Anti-bot -->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+      <div class="visually-hidden" aria-hidden="true">
         <input type="text" name="b_19131ba207553a340ec75a0e1_ebfe9d8533" tabindex="-1" value="" />
       </div>
       <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" />
