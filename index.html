@@ -8,6 +8,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/shared.css" type="text/css" />
   <link rel="stylesheet" href="/css/main.css" type="text/css" />
   <!-- Try to keep icon but use standard fallback -->
   <link rel="icon" href="/img/logo-w.svg" sizes="16x16 32x32" type="image/svg" />
@@ -28,14 +29,17 @@
   </nav>
 
   <!-- Go to Top Button -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <button id="myBtn" title="Go to top" aria-label="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <!-- Hero Section -->
   <header class="hero">
     <h1>Empowering Communities & Defending Personal Autonomy</h1>
     <p>A Canadian perspective on protecting civil liberties, dismantling systemic overreach, and fostering equitable,
       community-led policy.</p>
-    <a href="/#principles" class="btn">Discover Our Principles</a>
+    <div class="hero-actions">
+      <a href="/#principles" class="btn">Discover Our Principles</a>
+      <a href="https://omininiab.github.io/col-tracker/" class="btn btn-primary">Cost of Living Tracker</a>
+    </div>
   </header>
 
   <!-- Core Principles Section -->
@@ -126,8 +130,6 @@
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
-  <script src="/js/quotes.js"></script>
+  <script src="/assets/js/shared.js"></script>
 </body>
-
 </html>
